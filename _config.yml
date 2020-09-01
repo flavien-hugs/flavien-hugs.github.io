@@ -31,16 +31,9 @@ plugins:
 # their entries' file path in the `include:` list.
 
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - node_modules
+  - Makefile
+  - readme.md
   - package.json
   - package-lock.json
 

@@ -26,5 +26,5 @@ serve: include-npm-deps
 	JEKYLL_ENV=production $(JEKYLL) serve
 
 # generate-githubpages
-build-app:
-	rm -fr build && JEKYLL_ENV=production $(JEKYLL) build --baseurl https://flavien-hugs.github.io -d build/ && touch build/.nojekyll
+generate-githubpages:
+	rm -fr docs && JEKYLL_ENV=production $(JEKYLL) build --baseurl https://flavien-hugs.github.io -d docs/ && touch docs/.nojekyll
