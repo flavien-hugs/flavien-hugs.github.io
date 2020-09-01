@@ -7,18 +7,18 @@ url:
       url: https://unsta.netlify.app
       img: /assets/img/project/project-image01.png
 
-    - title: Plateforme de formation
-      url: https://unsta.netlify.app
+    - title: Marketplace en django
+      url: https://rtmarket.herokuapp.com
       img: /assets/img/project/project-image02.png
 
-    - title: Plateforme de formation
-      url: https://unsta.netlify.app
+    - title: Manipulation de l'api de YouTube
+      url: https://unsta-youtube.herokuapp.com
       img: /assets/img/project/project-image03.png
 
-    - title: Plateforme de formation
-      url: https://unsta.netlify.app
+    - title: Reduction d'url
+      url: https://unsta-shortenurl.herokuapp.com
       img: /assets/img/project/project-image04.png
 
-    - title: Plateforme de formation
-      url: https://unsta.netlify.app
+    - title: Plateforme de commerce electronique
+      url: https://emarket.pythonanywhere.com/fr/
       img: /assets/img/project/project-image05.png

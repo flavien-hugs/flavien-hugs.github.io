@@ -1,59 +1,28 @@
-<footer class="bg-light">
-    <div class="container border-bottom">
-        <div class="row pt-5">
-          <div class="col-sm-4 col-lg-3 col-md-6 mb-4 mb-lg-0"><a class="navbar-brand text-uppercase font-weight-bold" href="{{ site.baseurl }}"><i class='uil uil-user'></i> flavien-hugs</a>
-            <ul class="list-unstyled text-muted">
-              <li><a class="reset-anchor text-small" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-              <li><a class="reset-anchor text-small" href="tel:{{ site.tel }}">{{ site.tel }}</a></li>
-            </ul>
-            <ul class="list-inline text-muted">
-              <li class="list-inline-item"><a class="reset-anchor" href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li class="list-inline-item"><a class="reset-anchor" href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a class="reset-anchor" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-        </div>
-        
-        <div class="col-sm-4 col-lg-3 col-md-6 mb-4 mb-lg-0">
-            <h4>Liens utiles</h4>
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-1"><a class="text-small reset-anchor" href="{{ site.baseurl }}/a-propos/">Qui sommes-nous ?</a></li>
-              <li class="mb-1"><a class="text-small reset-anchor" href="{{ site.baseurl }}/faq/">
-                F.A.Q
-              </a></li>
-              <li class="mb-1">
-            </ul>
-          </div>
-          <div class="col-sm-4 col-lg-3 col-md-6 mb-4 mb-lg-0">
-            <h4>Nous rejoindre ?</h4>
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-1"><a class="text-small reset-anchor" href="#">Vous souhaitez rejoindre notre équipe ?</a></li>
-              <li class="mb-1"><a class="text-small reset-anchor" href="#">Support</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h4>Policy</h4>
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-1"><a class="text-small reset-anchor" href="#">
-                Politique de confidentialité
-              </a></li>
-              <li class="mb-1"><a class="text-small reset-anchor" href="#">Conditions d'utilisation</a></li>
-            </ul>
-          </div>
-        </div>
-    </div>
-    
-    <div class="container py-4">           
-        <div class="row text-center">
-            <div class="col-lg-6 p-lg-0 text-lg-left">
-                <p class="text-muted text-small mb-0">
-                    &copy; <script> document.write(new Date().getFullYear()); </script> Tous droits réservés.</p>
-            </div>
+<footer class="footer bg-light border-top py-4"> 
+  <div class="container">           
+    <div class="row text-center">
+      <div class="col-lg-6 p-lg-0 text-lg-left">
+        <p class="text-small">
+          <span class="mb-0 font-weight-bold text-primary text-uppercase">{{ site.title }}</span>
+          <ul class="list-unstyled font-weight-bold">
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li><span>{{ site.tel }}</span></li>
+          </ul>
+      </div>
 
-            <div class="col-lg-6 p-lg-0 text-lg-right">
-                <p class="text-muted text-small mb-0"><a class="text-primary reset-anchor" href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a></p>
-            </div>
-        </div>
+      <div class="col-lg-6 p-lg-0 text-lg-right">
+        <p class="mb-0">
+          <ul class="list-unstyled font-weight-bold">
+            <li><a class="text-small" href="https://github.com/{{ site.twitter_username }}" target="_blank">{{ site.twitter_username }} (twitter)</a></li>
+
+            <li><a class="text-small" href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }} (github)</a></li>
+          </ul>
+        </p>
+
+        <p class="text-muted text-small">&copy; <script> document.write(new Date().getFullYear()); </script> Tous droits réservés. &smid; <a class="text-primary text-uppercase" href="https://github.com/{{ site.github_username }}" target="_blank">unsta</p>
+      </div>
     </div>
+  </div>
 </footer>
 
 <script src="{{'/assets/vendor/js/jquery.min.js' | prepend: site.baseurl}}"></script>
