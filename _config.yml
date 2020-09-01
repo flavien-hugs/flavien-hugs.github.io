@@ -1,0 +1,53 @@
+encoding: utf-8
+destination: _site
+title: flavien HUGS
+author: flavien-hugs
+email: flavienhugs@pm.me
+tel: (+225) 51 57 13 96 / 77 27 48 86
+language: "fr"
+baseurl: ""
+url: ""
+description: "Développeur Full-Stack"
+keywords: [
+  'développeur web', 'initiation informatique', 'freelance',
+  'Python', 'HTML5', 'CSS3', 'JavaScript', 'Jekyll', 'VueJS',
+  'Twitter Bootstrap', 'Bootstrap', 'Markdown', 'Django'
+]
+
+timezone: Africa/Abidjan
+
+twitter_username: flavien_hugs
+github_username: flavien-hugs
+facebook_username: flavien.hugs
+linkedin_username: flavien-hugs
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+
+# Excluded items can be processed by explicitly
+# listing the directories or
+# their entries' file path in the `include:` list.
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+  style: compressed
+
+livereload: true

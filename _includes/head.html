@@ -1,0 +1,17 @@
+<head>
+    <meta charset="{{ site.encoding }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {% seo %}
+    <link rel="canonical" href="{{ site.url | replace:'index.md','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta name="description" content="{{ site.description | escape }}">
+    <meta name="keywords" content="{{ site.keywords | array_to_sentence_string }}">
+    <meta name="author" content="{{ site.author }}">
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}"><link rel="stylesheet" href="{{'/assets/css/unicons.css' | prepend: site.baseurl}}"><link rel="stylesheet" href="{{ '/assets/vendor/css/owl.carousel.min.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/vendor/css/owl.theme.default.min.css' | prepend: site.baseurl }}"><link rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl}}"><link rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl}}">
+
+    <title>{{ site.title }}</title>
+</head>

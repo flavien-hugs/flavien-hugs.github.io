@@ -1,0 +1,125 @@
+// VARIABLES
+$color-hover: #7451eb;
+$text-white: #ffffff;
+$body-font-color: #5b5b5b;
+$main-color: #ffc200;
+$button-color: #474559;
+
+@mixin transition-effect {transition: all 0.4s ease;}
+
+a:hover {color: $color-hover !important;}
+.navbar-brand {.uil {font-size: 30px;}}
+
+
+// OWL CAROUSEL
+.owl-carousel {
+  .owl-nav {
+    span {display: none;}
+    .owl-prev,
+    .owl-next {
+      &:before {
+        background: none;
+        padding: 0;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%); 
+        font-family: 'unicons';
+        font-size: 100px;
+        line-height: normal;
+      }
+    }
+    .owl-prev {
+      &:before {
+        content: '\e833';
+          left: -45px; 
+      }
+    }
+    .owl-next {
+      &:before {
+        content: '\e836';
+          right: -45px; 
+      }
+    }
+  }
+}
+
+.owl-theme {
+  .owl-nav [class*=owl-]{
+    background: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    font-size: inherit; 
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .owl-dots {
+    .owl-dot {
+      outline: none;
+      span {
+        width: 8px;
+        height: 8px;
+      }
+      &.active,
+      &:hover {
+        span {
+          background: $body-font-color;
+        }
+      }
+    }
+  }
+}
+
+// TIMELINE
+.timeline-wrapper {
+  position: relative;
+  padding-bottom: 10px;
+  &:last-child {
+    &:before {
+      height: 0;
+    }
+  }
+  &:before {
+    content: "";
+      background: $button-color;
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      left: 38px; 
+  }
+}
+
+.timeline-yr {
+  background: $button-color;
+  border-radius: 100%;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  span {
+    color: $text-white;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    line-height: 75px;
+  }
+}
+
+.timeline-info {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 432px;
+  margin-left: 6em;
+  small {
+    color: $button-color;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+}

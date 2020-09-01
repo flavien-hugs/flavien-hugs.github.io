@@ -1,0 +1,24 @@
+#-------------------
+# Menu de navigation
+#-------------------
+
+url:
+    - title: Plateforme de formation
+      url: https://unsta.netlify.app
+      img: /assets/img/project/project-image01.png
+
+    - title: Plateforme de formation
+      url: https://unsta.netlify.app
+      img: /assets/img/project/project-image02.png
+
+    - title: Plateforme de formation
+      url: https://unsta.netlify.app
+      img: /assets/img/project/project-image03.png
+
+    - title: Plateforme de formation
+      url: https://unsta.netlify.app
+      img: /assets/img/project/project-image04.png
+
+    - title: Plateforme de formation
+      url: https://unsta.netlify.app
+      img: /assets/img/project/project-image05.png
