@@ -18,7 +18,8 @@ npm-deps:
 	cp node_modules/popper.js/dist/umd/popper.min.js $(VENDOR_DIR_JS)
 	cp node_modules/bootstrap/dist/js/bootstrap.min.js $(VENDOR_DIR_JS)
 	cp node_modules/owl.carousel/dist/owl.carousel.min.js $(VENDOR_DIR_JS)
-
+	mkdir -p $(VENDOR_DIR_CSS)
+	cp node_modules/bootstrap/dist/css/bootstrap.min.css $(VENDOR_DIR_CSS)
 build: include-npm-deps
 	$(JEKYLL) build
 
