@@ -11,7 +11,7 @@ layout: compress
         <header class="header fixed-top header-animated">
             <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
                 <div class="container">
-                    <a class="navbar-brand text-uppercase font-weight-bold" href="{{ site.baseurl }}"><i class='uil uil-user'></i> flavien-hugs</a>
+                    <a class="navbar-brand text-uppercase font-weight-bold" href="{{ site.baseurl }}#about"><i class='uil uil-user'></i> {{ site.author }}</a>
 
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupported" aria-controls="navbarSupported" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
@@ -19,9 +19,9 @@ layout: compress
                         <ul class="navbar-nav text-uppercase font-weight-bold ml-auto">
                             <li class="nav-item"><a href="{{ site.baseurl }}#project" class="nav-link">mes projets</a></li>
 
-                            <li class="nav-item"><a href="{{ site.baseurl }}#resume" class="nav-link">mon parcours</a></li>
+                            <!--<li class="nav-item"><a href="{{ site.baseurl }}#resume" class="nav-link">je vous aide</a></li>-->
 
-                            <li class="nav-item"><a href="{{ site.baseurl }}#contact" class="nav-link">contact</a></li>
+                            <li class="nav-item"><a href="{{ site.baseurl }}#contact" class="nav-link">contactez-moi</a></li>
                         </ul>
                     </div>
                 </div>
@@ -29,20 +29,21 @@ layout: compress
         </header><!-- end navbar -->
 
         <!-- section about -->
-        <section class="about d-lg-flex justify-content-center align-items-center py-3">
+        <section class="about d-lg-flex justify-content-center align-items-center py-3" id="about">
             <div class="container py-5 mt-5">
                 <div class="row align-items-center no-gutters">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <h2 class="mb-3 text-justify">Hello ! je suis<span class="text-primary"> flavien HUGS </span>, développeur web junior full-stack, freelance sur Bouaké, avec plus de 10 heures de code par jour et de passion pour ce métier.</h2>
+                    <div class="col-md-6 mb-3 mb-md-0 order-lg-1">
+                        <h2 class="mb-3 text-justify font-weight-normal">Hello ! je suis<span class="text-primary text-justify font-weight-bold"> Flavien-HUGS </span>, développeur Web Full Stack Freelance, avec <strong>+8 années d'expériences</strong>, <strong>+10H de code par jour</strong> et de <strong>passion</strong> pour ce métier.</h2>
 
-                        <p class="text-muted">Après huit années de pratiques et de super projets pationnants réalisés et aussi contibués, Je mets mes compétences à votre disposition pour réaliser vos idées de projet d'application web les plus fou !</p>
+                        <p class="lead text-muted text-justify">J'aide les startupers, entreprises et particuliers à développer leur application web avec des forfaits bien adaptés à leur besoin. Je mets mes compétences à leur disposition pour réaliser leurs idées de projet web les plus fou !</p>
 
-                        <h2>Je suis donc disponible pour travailler sur vos projets les plus dingues ! </h2>
+                        <h2 class="mb-3 text-justify">Je suis donc disponible pour travailler sur vos projets les plus dingues ! </h2>
+                        <p class="lead text-muted text-justify">Je parle courrament les langages <strong class="font-weight-bold"> Python, Ruby, JavaScript </strong> en plus des framework <strong class="font-weight-bold"> Django/Flask, Jekyll, ReactJs, VueJs, Bootstrap.</strong></p>
                     </div>
 
-                    <div class="col-md-5 ml-auto">
+                    <div class="col-md-5 ml-auto order-lg-2">
                         <div class="img-gradient img-gradient-right">
-                            <img class="img-fluid shadow rounded" src="{{ site.baseurl }}/assets/img/engineer.svg" alt="flavien-hugs">
+                            <img class="img-fluid d-none d-md-block shadow rounded" src="{{ site.baseurl }}/assets/img/engineer.svg" srcset="{{ site.baseurl }}/assets/img/engineer.svg" alt="flavien-hugs">
                         </div>
                     </div>
                 </div>
@@ -74,7 +75,7 @@ layout: compress
         </section><!-- end section project -->
 
         <!-- section parcours -->
-        <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <!--<section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-11 text-center mx-auto col-12 pb-5">
@@ -82,7 +83,7 @@ layout: compress
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-12">
+                    <div class="col-sm-6 col-12">
                       <h2 class="mb-4">Experiences</h2>
 
                         <div class="timeline">
@@ -167,7 +168,23 @@ layout: compress
                     </div>    
                 </div>
             </div>
-        </section><!-- end section parcours -->
+        </section>--><!-- end section parcours -->
+
+        <!-- section contact -->
+        <section class="contact py-5 d-lg-flex justify-content-center align-items-center" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 text-center mx-auto col-12 pb-5"><h2>Je suis disponible pour pour mieux échanger</h2></div>
+                </div>
+            
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-4 bg-primary text-center font-weight-bold mb-3 mb-md-0"><a href="mailto:{{ site.email }}" class="btn btn-md font-weight-bold" title="laissez-moi un email"><span class="text-white">Laissez-moi un email</span></a></div>
+                        
+                    <div class="col-lg-4 ml-2 text-center bg-success font-weight-bold"><a title="Discuter avec nous WhatsApp" target="_blank" href="https://web.whatsapp.com/send?phone={{ site.whatsapp }}&amp;text=Bonjour, j'aimerai échanger avec vous sur un projet." onclick="gtag('config', 'UA-87674588-1', {'page_path': '/vpv/whatsapp'})" class="btn btn-md align-items-center"><span class="text-white">Discuter avec nous WhatsApp</span></a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end section contact -->
         
         {% include foo.html %}
     </body>
