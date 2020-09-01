@@ -1,7 +1,6 @@
 .git
-build
-.sass-cache
+_site
 .jekyll-cache
-.jekyll-metadata
+.sass-cache
 Gemfile.lock
 node_modules
