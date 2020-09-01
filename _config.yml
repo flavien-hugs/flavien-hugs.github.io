@@ -10,9 +10,9 @@ baseurl: ""
 url: ""
 description: "Mon Portfolio"
 keywords: [
-  'développeur web', 'initiation informatique', 'freelance',
+  'développeur web', 'formation informatique', 'freelance',
   'Python', 'HTML5', 'CSS3', 'JavaScript', 'Jekyll', 'VueJS',
-  'Twitter Bootstrap', 'Bootstrap', 'Markdown', 'Django'
+  'Twitter Bootstrap', 'ReactJS', 'Bootstrap', 'Markdown', 'Django'
 ]
 
 timezone: Africa/Abidjan
