@@ -1,6 +1,5 @@
 .git
 _site
-.jekyll-cache
 .sass-cache
 Gemfile.lock
 node_modules
