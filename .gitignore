@@ -1,5 +1,4 @@
 .git
-docs
 _site
 Gemfile.lock
 node_modules
