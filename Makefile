@@ -20,10 +20,11 @@ npm-deps:
 	cp node_modules/owl.carousel/dist/owl.carousel.min.js $(VENDOR_DIR_JS)
 	mkdir -p $(VENDOR_DIR_CSS)
 	cp node_modules/bootstrap/dist/css/bootstrap.min.css $(VENDOR_DIR_CSS)
-build: include-npm-deps
+
+build: npm-deps
 	$(JEKYLL) build
 
-serve: include-npm-deps
+serve: npm-deps
 	JEKYLL_ENV=production $(JEKYLL) serve
 
 # generate-githubpages
